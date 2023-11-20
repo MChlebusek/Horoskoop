@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Horoskoopу.HoroskoopPage">
+
+    <StackLayout Padding="20">
+        <DatePicker x:Name="datePicker" DateSelected="OnDateSelected" />
+
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="zodiacImage" HeightRequest="100" WidthRequest="100" />
+
+            <StackLayout>
+                <Entry x:Name="zodiacEntry" Placeholder="Enter Zodiac Sign" TextChanged="OnZodiacEntryChanged" />
+                <Label x:Name="zodiacLabel" FontSize="Large" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
