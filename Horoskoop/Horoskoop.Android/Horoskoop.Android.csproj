@@ -90,19 +90,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Jäär.jpg" />
+    <AndroidResource Include="Resources\drawable\Jaar.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Sõnn.jpg" />
+    <AndroidResource Include="Resources\drawable\Sonn.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Kaksikud.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Vähk.jpg" />
+    <AndroidResource Include="Resources\drawable\Vahk.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Lõvi.jpg" />
+    <AndroidResource Include="Resources\drawable\Lovi.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Neitsi.jpg" />

@@ -13,7 +13,6 @@ namespace Horoskoop
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new NavigationPage(new StartPage());
         }
 

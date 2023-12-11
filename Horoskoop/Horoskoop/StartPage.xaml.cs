@@ -12,36 +12,28 @@ namespace Horoskoop
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class StartPage : ContentPage
     {
-        List<ContentPage> pages = new List<ContentPage>() { new HoroskoopPage() };
-        List<string> teksts = new List<string> { "Horoskoop"  };
-        StackLayout st;
         public StartPage()
         {
-            st = new StackLayout
+            Button Ent_btn = new Button
             {
-                Orientation = StackOrientation.Vertical,
-                BackgroundColor = Color.YellowGreen
+                Text = "Horoskop",
+                BackgroundColor = Color.Azure
             };
-            for (int i = 0; i < pages.Count; i++)
+
+            Ent_btn.Clicked += Ent_btn_Clicked;
+
+            StackLayout st = new StackLayout
             {
-                Button button = new Button
-                {
-                    Text = teksts[i],
-                    TabIndex = i,
-                    BackgroundColor = Color.Red,
-                    TextColor = Color.White
-                };
-                st.Children.Add(button);
-                button.Clicked += Button_Clicked;
-            }
-            ScrollView sv = new ScrollView { Content = st };
-            Content = sv;
+                Children = { Ent_btn },
+                BackgroundColor = Color.Beige
+            };
+
+            Content = st;
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void Ent_btn_Clicked(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            await Navigation.PushAsync(pages[btn.TabIndex]);
+            await Navigation.PushAsync(new HoroskoopPage());
         }
     }
 }

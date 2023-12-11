@@ -14,6 +14,9 @@
     <Compile Update="HoroskoopPage.xaml.cs">
       <DependentUpon>HoroskoopPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
